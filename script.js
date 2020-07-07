@@ -27,7 +27,7 @@ const addTask = (text) => {
   li.innerHTML = `<input type="checkbox" /><label>${text}</label>
      <div class="delete">x</div>`;
   ul.appendChild(li);
-  // list.style.display = "block";
+  list.style.display = "block";
   addTaskToStorage();
 };
 

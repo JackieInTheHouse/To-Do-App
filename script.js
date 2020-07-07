@@ -24,10 +24,9 @@ const clickAdd = (event) => {
 
 const addTask = (text) => {
   let li = document.createElement("li");
-  li.innerHTML = `<input type="checkbox" /><label>${text}</label>
+  li.innerHTML = `<input type="checkbox" class="checkbox" /><label>${text}</label>
      <div class="delete">x</div>`;
   ul.appendChild(li);
-  // list.style.display = "block";
   addTaskToStorage();
 };
 
@@ -46,7 +45,8 @@ getTasks();
 const deleteOrChecked = (event) => {
   if (event.target.className == "delete") {
     deleteTask(event);
-  } else {
+  }
+  if (event.target.className == "checkbox") {
     checkedTask(event);
   }
 };

@@ -10,6 +10,7 @@
 
 - Save and retrive from local storage
 - Changed delete button CSS
+- Added windown alert message
 - Changed JavaScript writing
 
 ## Reference

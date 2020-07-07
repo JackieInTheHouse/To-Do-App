@@ -45,7 +45,7 @@ button {
   padding-top: 10px;
   padding-bottom: 10px;
   padding-right: 40px;
-  display: none;
+  /* display: none; */
 }
 
 ul {
